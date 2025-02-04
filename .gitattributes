@@ -46,6 +46,7 @@
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.jpeg filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
+*.ico filter=lfs diff=lfs merge=lfs -text
 *.gif filter=lfs diff=lfs merge=lfs -text
 *.psd filter=lfs diff=lfs merge=lfs -text
 *.ai filter=lfs diff=lfs merge=lfs -text
@@ -81,31 +82,12 @@
 *.aar filter=lfs diff=lfs merge=lfs -text
 *.lighting filter=lfs diff=lfs merge=lfs -text
 
+*.data filter=lfs diff=lfs merge=lfs -text
+*.wasm filter=lfs diff=lfs merge=lfs -text
+
 
 # find . -type f | sed -e 's/.*\.//' | sed -e 's/.*\///' | sort -u
-# asmdef
-# asset
-# bin
-# bmp
-# cs
-# fbx
-# glb
-# gltf
-# jpg
-# mat
-# meta
-# mtl
-# obj
-# png
-# prefab
-# texture2D
-# tga
-# tss
-# txt
-# unity
-# unitypackage
-# xrg
-# zip
+
 *.exe filter=lfs diff=lfs merge=lfs -text
 *.glb filter=lfs diff=lfs merge=lfs -text
 *.GLB filter=lfs diff=lfs merge=lfs -text

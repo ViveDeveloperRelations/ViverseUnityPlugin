@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['iwebrequest_0',['IWebRequest',['../interface_tests_1_1_test_endpoints_1_1_i_web_request.html',1,'Tests::TestEndpoints']]]
+  ['leaderboardresult_0',['LeaderboardResult',['../class_viverse_web_g_l_a_p_i_1_1_leaderboard_result.html',1,'ViverseWebGLAPI']]],
+  ['loginresult_1',['LoginResult',['../class_viverse_web_g_l_a_p_i_1_1_login_result.html',1,'ViverseWebGLAPI']]]
 ];

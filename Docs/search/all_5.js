@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['helloworldviverse_0',['HelloWorldViverse',['../class_hello_world_viverse.html',1,'']]],
-  ['hostconfig_1',['HostConfig',['../class_viverse_web_g_l_a_p_i_1_1_host_config.html',1,'ViverseWebGLAPI']]],
-  ['hostconfiglookup_2',['HostConfigLookup',['../class_viverse_web_g_l_a_p_i_1_1_host_config_lookup.html',1,'ViverseWebGLAPI']]],
-  ['hostconfigutil_3',['HostConfigUtil',['../class_viverse_web_g_l_a_p_i_1_1_host_config_util.html',1,'ViverseWebGLAPI']]],
-  ['httplistenersafehandle_4',['HttpListenerSafeHandle',['../class_http_listener_safe_handle.html',1,'']]],
-  ['httpserverwindow_5',['HttpServerWindow',['../class_editor_http_server_1_1_http_server_window.html',1,'EditorHttpServer']]],
-  ['httpsservertest_6',['HttpsServerTest',['../class_https_server_test.html',1,'']]]
+  ['ishtcmobilevr_0',['IsHtcMobileVR',['../class_viverse_web_g_l_a_p_i_1_1_viverse_utils_1_1_user_agent_helper.html#a06466379637d08deb1d20a2513bea371',1,'ViverseWebGLAPI::ViverseUtils::UserAgentHelper']]],
+  ['isinxr_1',['IsInXR',['../class_viverse_web_g_l_a_p_i_1_1_viverse_utils_1_1_user_agent_helper.html#a0a8c1c19599f6647c3638df13b2351b9',1,'ViverseWebGLAPI::ViverseUtils::UserAgentHelper']]],
+  ['ismobile_2',['IsMobile',['../class_viverse_web_g_l_a_p_i_1_1_viverse_utils_1_1_user_agent_helper.html#abf74016f77dd2cf9062edd7bb1cb5a71',1,'ViverseWebGLAPI::ViverseUtils::UserAgentHelper']]],
+  ['ismobileios_3',['IsMobileIOS',['../class_viverse_web_g_l_a_p_i_1_1_viverse_utils_1_1_user_agent_helper.html#ac75acc31ef921c9976547213b7fc3625',1,'ViverseWebGLAPI::ViverseUtils::UserAgentHelper']]],
+  ['isvrsupported_4',['IsVRSupported',['../class_viverse_web_g_l_a_p_i_1_1_viverse_utils_1_1_user_agent_helper.html#a864328e6417f8a5dcbb880dd63366b86',1,'ViverseWebGLAPI::ViverseUtils::UserAgentHelper']]]
 ];

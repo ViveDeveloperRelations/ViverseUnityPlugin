@@ -43,11 +43,6 @@
 *-[Nn]av[Mm]esh.asset -unityyaml lfs
 ## git-lfs ##
 #Image
-*.jpg filter=lfs diff=lfs merge=lfs -text
-*.jpeg filter=lfs diff=lfs merge=lfs -text
-*.png filter=lfs diff=lfs merge=lfs -text
-*.ico filter=lfs diff=lfs merge=lfs -text
-*.gif filter=lfs diff=lfs merge=lfs -text
 *.psd filter=lfs diff=lfs merge=lfs -text
 *.ai filter=lfs diff=lfs merge=lfs -text
 #Audio
@@ -82,8 +77,6 @@
 *.aar filter=lfs diff=lfs merge=lfs -text
 *.lighting filter=lfs diff=lfs merge=lfs -text
 
-*.data filter=lfs diff=lfs merge=lfs -text
-*.wasm filter=lfs diff=lfs merge=lfs -text
 
 
 # find . -type f | sed -e 's/.*\.//' | sed -e 's/.*\///' | sort -u

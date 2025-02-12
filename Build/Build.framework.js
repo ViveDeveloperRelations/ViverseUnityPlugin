@@ -38,12 +38,6 @@ Module['ready'] = new Promise((resolve, reject) => {
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-Module['CallbackExample'] = {
-    TestGetString: function() {
-        return "Hello from JavaScript";
-    }
-    //todo: async function example here
-};
 Module['ViverseUtils'] = {
     $deps: ['ViverseReturnCodes', 'ViverseAsyncHelper'],
     // Reference shared return codes
@@ -2000,10 +1994,10 @@ function dbg(text) {
 // === Body ===
 
 var ASM_CONSTS = {
-  2547456: () => { Module['emscripten_get_now_backup'] = performance.now; },  
- 2547511: ($0) => { performance.now = function() { return $0; }; },  
- 2547559: ($0) => { performance.now = function() { return $0; }; },  
- 2547607: () => { performance.now = Module['emscripten_get_now_backup']; }
+  2546512: () => { Module['emscripten_get_now_backup'] = performance.now; },  
+ 2546567: ($0) => { performance.now = function() { return $0; }; },  
+ 2546615: ($0) => { performance.now = function() { return $0; }; },  
+ 2546663: () => { performance.now = Module['emscripten_get_now_backup']; }
 };
 
 
@@ -2398,39 +2392,6 @@ var ASM_CONSTS = {
           Module.ViverseCore.Avatar.Initialize(),
           callbackWrapper
         );
-      }
-
-  async function _ExecuteTaskCallback(taskId, callback) {
-          try {
-              console.log("ExecuteTaskCallback started with taskId:", taskId);
-  
-              // Simulate some async work based on taskId
-              await new Promise(resolve => setTimeout(resolve, 500));
-  
-              // Create a result string - you can customize this based on your needs
-              let result = `Task ${taskId} completed successfully at ${new Date().toISOString()}`;
-  
-              // Allocate memory and copy the string
-              let length = lengthBytesUTF8(result) + 1;
-              let ptr = _malloc(length);
-              stringToUTF8(result, ptr, length);
-  
-              // Call the callback with the string pointer
-              ((a1) => dynCall_vi.apply(null, [callback, a1]))(ptr);
-  
-              // Free the allocated memory
-              _free(ptr);
-  
-              console.log("ExecuteTaskCallback completed for taskId:", taskId);
-          } catch (e) {
-              console.error("Error in ExecuteTaskCallback:", e);
-              let errorResult = `Error processing task ${taskId}: ${e.message}`;
-              let length = lengthBytesUTF8(errorResult) + 1;
-              let ptr = _malloc(length);
-              stringToUTF8(errorResult, ptr, length);
-              ((a1) => dynCall_vi.apply(null, [callback, a1]))(ptr);
-              _free(ptr);
-          }
       }
 
   function _GetJSLoadTimeInfo(loadTimePtr) {
@@ -8656,21 +8617,6 @@ var ASM_CONSTS = {
           requestOptions.timeout = timeout;
   	}
 
-  function _JsSetTimeout(message, timeout, callback) {
-          console.log("calling JsSetTimeout with message: " + message + " timeout: " + timeout);
-          // Convert the incoming pointer to a string.
-          var stringMessage = UTF8ToString(message);
-          // Allocate a new copy of the string.
-          var buffer = stringToNewUTF8(stringMessage);
-          setTimeout(function () {
-              console.log("settimeout done");
-              // Invoke the callback with the pointer.
-              ((a1) => dynCall_vi.apply(null, [callback, a1]))(buffer);
-              _free(buffer);
-              console.log("settimeout free done");
-          }, timeout);
-      }
-
   
   
   function _Leaderboard_GetLeaderboard(appId, configJson, taskId, callback) {
@@ -8794,80 +8740,6 @@ var ASM_CONSTS = {
           Module.ViverseCore.SSO.Logout(UTF8ToString(redirectUrl)),
           callbackWrapper
         );
-      }
-
-  async function _TestAsyncOperation(callback) {
-          try {
-              console.log("Starting TestAsyncOperation simulated async operation...");
-              // Simulate an async delay.
-              await new Promise(resolve => setTimeout(resolve, 1000));
-              // Prepare JSON data.
-              let data = {
-                  TaskId: 100,
-                  ReturnCode: 0,
-                  Message: "Simulated async operation from TestAsyncOperation completed successfully"
-              };
-              let jsonData = JSON.stringify(data);
-              // Calculate length, allocate memory, and write the UTF8 string.
-              let length = lengthBytesUTF8(jsonData) + 1;
-              let ptr = _malloc(length);
-              stringToUTF8(jsonData, ptr, length);
-              // Invoke the callback.
-              ((a1) => dynCall_vi.apply(null, [callback, a1]))(ptr);
-              _free(ptr);
-          } catch (e) {
-              console.error("Error during TestAsyncOperation:", e);
-              let data = {
-                  TaskId: 100,
-                  ReturnCode: -1,
-                  Message: "Simulated async operation failed: " + e.toString()
-              };
-              let jsonData = JSON.stringify(data);
-              let length = lengthBytesUTF8(jsonData) + 1;
-              let ptr = _malloc(length);
-              stringToUTF8(jsonData, ptr, length);
-              ((a1) => dynCall_vi.apply(null, [callback, a1]))(ptr);
-              _free(ptr);
-          }
-      }
-
-  async function _TestCallAsyncCallback(callback) {
-          try {
-              console.log("Starting TestCallAsyncCallback simulated async operation...");
-              await new Promise(resolve => setTimeout(resolve, 1000));
-              let data = {
-                  TaskId: 42,
-                  ReturnCode: 0,
-                  Message: "Simulated async operation completed successfully"
-              };
-              let jsonData = JSON.stringify(data);
-              let length = lengthBytesUTF8(jsonData) + 1;
-              let ptr = _malloc(length);
-              stringToUTF8(jsonData, ptr, length);
-              ((a1) => dynCall_vi.apply(null, [callback, a1]))(ptr);
-              _free(ptr);
-              console.log("Simulated async operation finished");
-          } catch (e) {
-              console.error("Error during TestCallAsyncCallback:", e);
-              let data = {
-                  TaskId: 42,
-                  ReturnCode: -1,
-                  Message: "Simulated async operation failed: " + e.toString()
-              };
-              let jsonData = JSON.stringify(data);
-              let length = lengthBytesUTF8(jsonData) + 1;
-              let ptr = _malloc(length);
-              stringToUTF8(jsonData, ptr, length);
-              ((a1) => dynCall_vi.apply(null, [callback, a1]))(ptr);
-              _free(ptr);
-          }
-      }
-
-  function _TestGetString() {
-          // Call the function defined in the jspre file.
-          var result = Module['CallbackExample'].TestGetString();
-          // Convert the result into a UTF8 pointer.
-          return stringToNewUTF8(result);
       }
 
   var ViverseUtils = {};
@@ -17641,7 +17513,6 @@ var wasmImports = {
   "Avatar_GetAvatarList": _Avatar_GetAvatarList,
   "Avatar_GetProfile": _Avatar_GetProfile,
   "Avatar_Initialize": _Avatar_Initialize,
-  "ExecuteTaskCallback": _ExecuteTaskCallback,
   "GetJSLoadTimeInfo": _GetJSLoadTimeInfo,
   "GetJSMemoryInfo": _GetJSMemoryInfo,
   "JS_Accelerometer_IsRunning": _JS_Accelerometer_IsRunning,
@@ -17741,7 +17612,6 @@ var wasmImports = {
   "JS_WebRequest_SetRedirectLimit": _JS_WebRequest_SetRedirectLimit,
   "JS_WebRequest_SetRequestHeader": _JS_WebRequest_SetRequestHeader,
   "JS_WebRequest_SetTimeout": _JS_WebRequest_SetTimeout,
-  "JsSetTimeout": _JsSetTimeout,
   "Leaderboard_GetLeaderboard": _Leaderboard_GetLeaderboard,
   "Leaderboard_Initialize": _Leaderboard_Initialize,
   "Leaderboard_UploadScore": _Leaderboard_UploadScore,
@@ -17750,9 +17620,6 @@ var wasmImports = {
   "SSO_InitializeClient": _SSO_InitializeClient,
   "SSO_LoginWithRedirect": _SSO_LoginWithRedirect,
   "SSO_Logout": _SSO_Logout,
-  "TestAsyncOperation": _TestAsyncOperation,
-  "TestCallAsyncCallback": _TestCallAsyncCallback,
-  "TestGetString": _TestGetString,
   "Utils_Cookie_GetItem": _Utils_Cookie_GetItem,
   "Utils_Cookie_SetItem": _Utils_Cookie_SetItem,
   "Utils_Free_String": _Utils_Free_String,

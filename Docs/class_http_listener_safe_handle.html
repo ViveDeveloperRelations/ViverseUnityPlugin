@@ -133,33 +133,163 @@ Collaboration diagram for HttpListenerSafeHandle:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8f8dd4e12294ba14212eea90804a0f93" id="r_a8f8dd4e12294ba14212eea90804a0f93"><td class="memItemLeft" align="right" valign="top"><a id="a8f8dd4e12294ba14212eea90804a0f93" name="a8f8dd4e12294ba14212eea90804a0f93"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> (HttpListener listener)</td></tr>
+<tr class="memitem:a759d758395a42eeffd87693677043266" id="r_a759d758395a42eeffd87693677043266"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a759d758395a42eeffd87693677043266">HttpListenerSafeHandle</a> ()</td></tr>
+<tr class="separator:a759d758395a42eeffd87693677043266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f8dd4e12294ba14212eea90804a0f93" id="r_a8f8dd4e12294ba14212eea90804a0f93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f8dd4e12294ba14212eea90804a0f93">Initialize</a> (HttpListener listener)</td></tr>
 <tr class="separator:a8f8dd4e12294ba14212eea90804a0f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a55acfbb6d3b7ddef728284c188950232" id="r_a55acfbb6d3b7ddef728284c188950232"><td class="memItemLeft" align="right" valign="top"><a id="a55acfbb6d3b7ddef728284c188950232" name="a55acfbb6d3b7ddef728284c188950232"></a>
-override bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInvalid</b> =&gt; handle == IntPtr.Zero</td></tr>
+<tr class="memitem:a55acfbb6d3b7ddef728284c188950232" id="r_a55acfbb6d3b7ddef728284c188950232"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55acfbb6d3b7ddef728284c188950232">IsInvalid</a> =&gt; handle == IntPtr.Zero</td></tr>
 <tr class="separator:a55acfbb6d3b7ddef728284c188950232"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd02d18064a6571f622c908c36667497" id="r_abd02d18064a6571f622c908c36667497"><td class="memItemLeft" align="right" valign="top"><a id="abd02d18064a6571f622c908c36667497" name="abd02d18064a6571f622c908c36667497"></a>
-CancellationToken&#160;</td><td class="memItemRight" valign="bottom"><b>Token</b> =&gt; cancellationTokenSource.Token</td></tr>
+<tr class="memitem:abd02d18064a6571f622c908c36667497" id="r_abd02d18064a6571f622c908c36667497"><td class="memItemLeft" align="right" valign="top">CancellationToken&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd02d18064a6571f622c908c36667497">Token</a> =&gt; cancellationTokenSource.Token</td></tr>
 <tr class="separator:abd02d18064a6571f622c908c36667497"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaba6a0e5e187165dcd266e99ad20f432" id="r_aaba6a0e5e187165dcd266e99ad20f432"><td class="memItemLeft" align="right" valign="top"><a id="aaba6a0e5e187165dcd266e99ad20f432" name="aaba6a0e5e187165dcd266e99ad20f432"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsListening</b> =&gt; listener?.IsListening ?? false</td></tr>
+<tr class="memitem:aaba6a0e5e187165dcd266e99ad20f432" id="r_aaba6a0e5e187165dcd266e99ad20f432"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaba6a0e5e187165dcd266e99ad20f432">IsListening</a> =&gt; listener?.IsListening ?? false</td></tr>
 <tr class="separator:aaba6a0e5e187165dcd266e99ad20f432"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2e437ed44b87ed8b581a343d8e32367" id="r_ab2e437ed44b87ed8b581a343d8e32367"><td class="memItemLeft" align="right" valign="top"><a id="ab2e437ed44b87ed8b581a343d8e32367" name="ab2e437ed44b87ed8b581a343d8e32367"></a>
-HttpListener&#160;</td><td class="memItemRight" valign="bottom"><b>Listener</b> =&gt; listener</td></tr>
+<tr class="memitem:ab2e437ed44b87ed8b581a343d8e32367" id="r_ab2e437ed44b87ed8b581a343d8e32367"><td class="memItemLeft" align="right" valign="top">HttpListener&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2e437ed44b87ed8b581a343d8e32367">Listener</a> =&gt; listener</td></tr>
 <tr class="separator:ab2e437ed44b87ed8b581a343d8e32367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a2ddea77cf9cadaf982b62adde0202361" id="r_a2ddea77cf9cadaf982b62adde0202361"><td class="memItemLeft" align="right" valign="top"><a id="a2ddea77cf9cadaf982b62adde0202361" name="a2ddea77cf9cadaf982b62adde0202361"></a>
-override bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseHandle</b> ()</td></tr>
+<tr class="memitem:a2ddea77cf9cadaf982b62adde0202361" id="r_a2ddea77cf9cadaf982b62adde0202361"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ddea77cf9cadaf982b62adde0202361">ReleaseHandle</a> ()</td></tr>
 <tr class="separator:a2ddea77cf9cadaf982b62adde0202361"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a759d758395a42eeffd87693677043266" name="a759d758395a42eeffd87693677043266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a759d758395a42eeffd87693677043266">&#9670;&#160;</a></span>HttpListenerSafeHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HttpListenerSafeHandle::HttpListenerSafeHandle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8f8dd4e12294ba14212eea90804a0f93" name="a8f8dd4e12294ba14212eea90804a0f93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f8dd4e12294ba14212eea90804a0f93">&#9670;&#160;</a></span>Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HttpListenerSafeHandle::Initialize </td>
+          <td>(</td>
+          <td class="paramtype">HttpListener</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ddea77cf9cadaf982b62adde0202361" name="a2ddea77cf9cadaf982b62adde0202361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ddea77cf9cadaf982b62adde0202361">&#9670;&#160;</a></span>ReleaseHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override bool HttpListenerSafeHandle::ReleaseHandle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a55acfbb6d3b7ddef728284c188950232" name="a55acfbb6d3b7ddef728284c188950232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55acfbb6d3b7ddef728284c188950232">&#9670;&#160;</a></span>IsInvalid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override bool HttpListenerSafeHandle::IsInvalid =&gt; handle == IntPtr.Zero</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaba6a0e5e187165dcd266e99ad20f432" name="aaba6a0e5e187165dcd266e99ad20f432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaba6a0e5e187165dcd266e99ad20f432">&#9670;&#160;</a></span>IsListening</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HttpListenerSafeHandle::IsListening =&gt; listener?.IsListening ?? false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab2e437ed44b87ed8b581a343d8e32367" name="ab2e437ed44b87ed8b581a343d8e32367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2e437ed44b87ed8b581a343d8e32367">&#9670;&#160;</a></span>Listener</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HttpListener HttpListenerSafeHandle::Listener =&gt; listener</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd02d18064a6571f622c908c36667497" name="abd02d18064a6571f622c908c36667497"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd02d18064a6571f622c908c36667497">&#9670;&#160;</a></span>Token</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CancellationToken HttpListenerSafeHandle::Token =&gt; cancellationTokenSource.Token</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Packages/UnityViverseWebGLAPI/Editor/<b>SimpleHttpServer.cs</b></li>
+<li>Packages/UnityViverseWebGLAPI/Editor/<a class="el" href="_simple_http_server_8cs.html">SimpleHttpServer.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['daily_0',['Daily',['../namespace_viverse_web_g_l_a_p_i.html#ac79084d478954f25dd7c09f1b26cd0f1ac512b685438f41daa7386329a3b8f8d3',1,'ViverseWebGLAPI']]]
+  ['global_0',['Global',['../namespace_viverse_web_g_l_a_p_i.html#abc399166c4f59e8d78daa2bb36a92d8da236acf55a31716ff4600a4c941044c5d',1,'ViverseWebGLAPI']]]
 ];

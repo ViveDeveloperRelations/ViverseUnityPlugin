@@ -1,6 +1,6 @@
 var class_viverse_web_g_l_a_p_i_1_1_viverse_utils_1_1_user_agent_helper =
 [
-    [ "DeviceChecks", "class_viverse_web_g_l_a_p_i_1_1_viverse_utils_1_1_user_agent_helper_1_1_device_checks.html", null ],
+    [ "DeviceChecks", "class_viverse_web_g_l_a_p_i_1_1_viverse_utils_1_1_user_agent_helper_1_1_device_checks.html", "class_viverse_web_g_l_a_p_i_1_1_viverse_utils_1_1_user_agent_helper_1_1_device_checks" ],
     [ "GetUserAgent", "class_viverse_web_g_l_a_p_i_1_1_viverse_utils_1_1_user_agent_helper.html#ae2fee8624bca18bc9534c7999b02cbcc", null ],
     [ "IsHtcMobileVR", "class_viverse_web_g_l_a_p_i_1_1_viverse_utils_1_1_user_agent_helper.html#a06466379637d08deb1d20a2513bea371", null ],
     [ "IsInXR", "class_viverse_web_g_l_a_p_i_1_1_viverse_utils_1_1_user_agent_helper.html#a0a8c1c19599f6647c3638df13b2351b9", null ],

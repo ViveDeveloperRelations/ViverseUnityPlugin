@@ -1,0 +1,7 @@
+<map id="SimpleHttpsServer" name="SimpleHttpsServer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="243,43,374,69"/>
+<area shape="rect" id="Node000002" href="$class_editor_http_server_1_1_http_server_window.html#a0d3a8734ac287f132ab97cc16da79388" title=" " alt="" coords="5,5,195,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,47,195,43,195,37,228,42"/>
+<area shape="rect" id="Node000003" href="$_simple_http_server_8cs.html#a32a147e5b010ca23a514cc823711c90d" title=" " alt="" coords="56,72,144,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="228,70,145,82,144,77,227,65"/>
+</map>

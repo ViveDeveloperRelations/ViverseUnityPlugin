@@ -111,7 +111,7 @@ $(function(){initNavTree('class_viverse_web_g_l_a_p_i_1_1_host_config_lookup.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a73a26a8e887151a96f024a0c152defe4" id="r_a73a26a8e887151a96f024a0c152defe4"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; HostConfigUtil.HostType, HostConfig &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73a26a8e887151a96f024a0c152defe4">HostTypeToDefaultHostConfig</a></td></tr>
+<tr class="memitem:a73a26a8e887151a96f024a0c152defe4" id="r_a73a26a8e887151a96f024a0c152defe4"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; <a class="el" href="class_viverse_web_g_l_a_p_i_1_1_host_config_util.html#a74ad24667d4ce4186c1186c5a10eab8e">HostConfigUtil.HostType</a>, HostConfig &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73a26a8e887151a96f024a0c152defe4">HostTypeToDefaultHostConfig</a></td></tr>
 <tr class="separator:a73a26a8e887151a96f024a0c152defe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -125,7 +125,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Dictionary&lt;HostConfigUtil.HostType, HostConfig&gt; ViverseWebGLAPI::HostConfigLookup::HostTypeToDefaultHostConfig</td>
+          <td class="memname">Dictionary&lt;<a class="el" href="class_viverse_web_g_l_a_p_i_1_1_host_config_util.html#a74ad24667d4ce4186c1186c5a10eab8e">HostConfigUtil.HostType</a>, HostConfig&gt; ViverseWebGLAPI::HostConfigLookup::HostTypeToDefaultHostConfig</td>
         </tr>
       </table>
   </td>
@@ -137,39 +137,45 @@ Static Public Attributes</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span>()</div>
 <div class="line">            {</div>
 <div class="line">                </div>
-<div class="line">                {<a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_host_config_util.html">HostConfigUtil</a>.HostType.STAGE, <span class="keyword">new</span> HostConfig()</div>
+<div class="line">                {<a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_host_config_util.html">HostConfigUtil</a>.<a class="code hl_enumeration" href="class_viverse_web_g_l_a_p_i_1_1_host_config_util.html#a74ad24667d4ce4186c1186c5a10eab8e">HostType</a>.STAGE, <span class="keyword">new</span> HostConfig()</div>
 <div class="line">                {</div>
-<div class="line">                    SSODomain = <span class="keyword">new</span> SSODomain(<span class="stringliteral">&quot;https://www-stage.viverse.com&quot;</span>),</div>
-<div class="line">                    <a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_world_host.html">WorldHost</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_world_host.html">WorldHost</a>(<span class="stringliteral">&quot;https://world-stage.viverse.com/&quot;</span>),</div>
-<div class="line">                    WorldAPIHost = <span class="keyword">new</span> WorldAPIHost(<span class="stringliteral">&quot;https://world-api-stage.viverse.com/&quot;</span>),</div>
-<div class="line">                    <a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_avatar_host.html">AvatarHost</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_avatar_host.html">AvatarHost</a>(<span class="stringliteral">&quot;https://avatar-stage.viverse.com/&quot;</span>),</div>
-<div class="line">                    <a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_cookie_access_key.html">CookieAccessKey</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_cookie_access_key.html">CookieAccessKey</a>(<span class="stringliteral">&quot;_htc_access_token_stage&quot;</span>)</div>
+<div class="line">                    <a class="code hl_variable" href="namespace_viverse_web_g_l_a_p_i.html#a5474db1511868632f5173cb9ce753545">SSODomain</a> = <span class="keyword">new</span> <a class="code hl_variable" href="namespace_viverse_web_g_l_a_p_i.html#a5474db1511868632f5173cb9ce753545">SSODomain</a>(<span class="stringliteral">&quot;https://www-stage.viverse.com&quot;</span>),</div>
+<div class="line">                    <a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_world_host.html">WorldHost</a> = <span class="keyword">new</span> <a class="code hl_variable" href="namespace_viverse_web_g_l_a_p_i.html#a422783971af6c1b7dc53f9e3fba54324">WorldHost</a>(<span class="stringliteral">&quot;https://world-stage.viverse.com/&quot;</span>),</div>
+<div class="line">                    <a class="code hl_variable" href="namespace_viverse_web_g_l_a_p_i.html#a0ee07dc77702d66851bfe65aec584931">WorldAPIHost</a> = <span class="keyword">new</span> <a class="code hl_variable" href="namespace_viverse_web_g_l_a_p_i.html#a0ee07dc77702d66851bfe65aec584931">WorldAPIHost</a>(<span class="stringliteral">&quot;https://world-api-stage.viverse.com/&quot;</span>),</div>
+<div class="line">                    <a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_avatar_host.html">AvatarHost</a> = <span class="keyword">new</span> <a class="code hl_variable" href="namespace_viverse_web_g_l_a_p_i.html#a809fc3cfec3a7ca2bac5c78c41cb6ba6">AvatarHost</a>(<span class="stringliteral">&quot;https://avatar-stage.viverse.com/&quot;</span>),</div>
+<div class="line">                    <a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_cookie_access_key.html">CookieAccessKey</a> = <span class="keyword">new</span> <a class="code hl_variable" href="namespace_viverse_web_g_l_a_p_i.html#a287acd698157e233f4d2c601b5cf9087">CookieAccessKey</a>(<span class="stringliteral">&quot;_htc_access_token_stage&quot;</span>)</div>
 <div class="line">                } },</div>
-<div class="line">                {<a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_host_config_util.html">HostConfigUtil</a>.HostType.PROD, <span class="keyword">new</span> HostConfig()</div>
+<div class="line">                {<a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_host_config_util.html">HostConfigUtil</a>.<a class="code hl_enumeration" href="class_viverse_web_g_l_a_p_i_1_1_host_config_util.html#a74ad24667d4ce4186c1186c5a10eab8e">HostType</a>.PROD, <span class="keyword">new</span> HostConfig()</div>
 <div class="line">                {</div>
-<div class="line">                    SSODomain = <span class="keyword">new</span> SSODomain(<span class="stringliteral">&quot;https://account.htcvive.com&quot;</span>),</div>
-<div class="line">                    <a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_world_host.html">WorldHost</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_world_host.html">WorldHost</a>(<span class="stringliteral">&quot;https://world.viverse.com/&quot;</span>),</div>
-<div class="line">                    WorldAPIHost = <span class="keyword">new</span> WorldAPIHost(<span class="stringliteral">&quot;https://world-api.viverse.com/&quot;</span>),</div>
-<div class="line">                    <a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_avatar_host.html">AvatarHost</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_avatar_host.html">AvatarHost</a>(<span class="stringliteral">&quot;https://sdk-api.viverse.com/&quot;</span>),</div>
-<div class="line">                    <a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_cookie_access_key.html">CookieAccessKey</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_cookie_access_key.html">CookieAccessKey</a>(<span class="stringliteral">&quot;_htc_access_token_production&quot;</span>)</div>
+<div class="line">                    <a class="code hl_variable" href="namespace_viverse_web_g_l_a_p_i.html#a5474db1511868632f5173cb9ce753545">SSODomain</a> = <span class="keyword">new</span> <a class="code hl_variable" href="namespace_viverse_web_g_l_a_p_i.html#a5474db1511868632f5173cb9ce753545">SSODomain</a>(<span class="stringliteral">&quot;https://account.htcvive.com&quot;</span>),</div>
+<div class="line">                    <a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_world_host.html">WorldHost</a> = <span class="keyword">new</span> <a class="code hl_variable" href="namespace_viverse_web_g_l_a_p_i.html#a422783971af6c1b7dc53f9e3fba54324">WorldHost</a>(<span class="stringliteral">&quot;https://world.viverse.com/&quot;</span>),</div>
+<div class="line">                    <a class="code hl_variable" href="namespace_viverse_web_g_l_a_p_i.html#a0ee07dc77702d66851bfe65aec584931">WorldAPIHost</a> = <span class="keyword">new</span> <a class="code hl_variable" href="namespace_viverse_web_g_l_a_p_i.html#a0ee07dc77702d66851bfe65aec584931">WorldAPIHost</a>(<span class="stringliteral">&quot;https://world-api.viverse.com/&quot;</span>),</div>
+<div class="line">                    <a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_avatar_host.html">AvatarHost</a> = <span class="keyword">new</span> <a class="code hl_variable" href="namespace_viverse_web_g_l_a_p_i.html#a809fc3cfec3a7ca2bac5c78c41cb6ba6">AvatarHost</a>(<span class="stringliteral">&quot;https://sdk-api.viverse.com/&quot;</span>),</div>
+<div class="line">                    <a class="code hl_class" href="class_viverse_web_g_l_a_p_i_1_1_cookie_access_key.html">CookieAccessKey</a> = <span class="keyword">new</span> <a class="code hl_variable" href="namespace_viverse_web_g_l_a_p_i.html#a287acd698157e233f4d2c601b5cf9087">CookieAccessKey</a>(<span class="stringliteral">&quot;_htc_access_token_production&quot;</span>)</div>
 <div class="line">                } }</div>
 <div class="line">            }</div>
 <div class="ttc" id="aclass_viverse_web_g_l_a_p_i_1_1_avatar_host_html"><div class="ttname"><a href="class_viverse_web_g_l_a_p_i_1_1_avatar_host.html">ViverseWebGLAPI::AvatarHost</a></div><div class="ttdef"><b>Definition</b> HostConfig.cs:27</div></div>
 <div class="ttc" id="aclass_viverse_web_g_l_a_p_i_1_1_cookie_access_key_html"><div class="ttname"><a href="class_viverse_web_g_l_a_p_i_1_1_cookie_access_key.html">ViverseWebGLAPI::CookieAccessKey</a></div><div class="ttdef"><b>Definition</b> HostConfig.cs:6</div></div>
 <div class="ttc" id="aclass_viverse_web_g_l_a_p_i_1_1_host_config_util_html"><div class="ttname"><a href="class_viverse_web_g_l_a_p_i_1_1_host_config_util.html">ViverseWebGLAPI::HostConfigUtil</a></div><div class="ttdef"><b>Definition</b> HostConfigUtil.cs:8</div></div>
+<div class="ttc" id="aclass_viverse_web_g_l_a_p_i_1_1_host_config_util_html_a74ad24667d4ce4186c1186c5a10eab8e"><div class="ttname"><a href="class_viverse_web_g_l_a_p_i_1_1_host_config_util.html#a74ad24667d4ce4186c1186c5a10eab8e">ViverseWebGLAPI::HostConfigUtil::HostType</a></div><div class="ttdeci">HostType</div><div class="ttdef"><b>Definition</b> HostConfigUtil.cs:10</div></div>
 <div class="ttc" id="aclass_viverse_web_g_l_a_p_i_1_1_world_host_html"><div class="ttname"><a href="class_viverse_web_g_l_a_p_i_1_1_world_host.html">ViverseWebGLAPI::WorldHost</a></div><div class="ttdef"><b>Definition</b> HostConfig.cs:16</div></div>
+<div class="ttc" id="anamespace_viverse_web_g_l_a_p_i_html_a0ee07dc77702d66851bfe65aec584931"><div class="ttname"><a href="namespace_viverse_web_g_l_a_p_i.html#a0ee07dc77702d66851bfe65aec584931">ViverseWebGLAPI::WorldAPIHost</a></div><div class="ttdeci">WorldAPIHost WorldAPIHost</div><div class="ttdef"><b>Definition</b> ScratchForStateManagement.cs:45</div></div>
+<div class="ttc" id="anamespace_viverse_web_g_l_a_p_i_html_a287acd698157e233f4d2c601b5cf9087"><div class="ttname"><a href="namespace_viverse_web_g_l_a_p_i.html#a287acd698157e233f4d2c601b5cf9087">ViverseWebGLAPI::CookieAccessKey</a></div><div class="ttdeci">CookieAccessKey CookieAccessKey</div><div class="ttdef"><b>Definition</b> ScratchForStateManagement.cs:43</div></div>
+<div class="ttc" id="anamespace_viverse_web_g_l_a_p_i_html_a422783971af6c1b7dc53f9e3fba54324"><div class="ttname"><a href="namespace_viverse_web_g_l_a_p_i.html#a422783971af6c1b7dc53f9e3fba54324">ViverseWebGLAPI::WorldHost</a></div><div class="ttdeci">WorldHost WorldHost</div><div class="ttdef"><b>Definition</b> ScratchForStateManagement.cs:42</div></div>
+<div class="ttc" id="anamespace_viverse_web_g_l_a_p_i_html_a5474db1511868632f5173cb9ce753545"><div class="ttname"><a href="namespace_viverse_web_g_l_a_p_i.html#a5474db1511868632f5173cb9ce753545">ViverseWebGLAPI::SSODomain</a></div><div class="ttdeci">SSODomain SSODomain</div><div class="ttdef"><b>Definition</b> ScratchForStateManagement.cs:41</div></div>
+<div class="ttc" id="anamespace_viverse_web_g_l_a_p_i_html_a809fc3cfec3a7ca2bac5c78c41cb6ba6"><div class="ttname"><a href="namespace_viverse_web_g_l_a_p_i.html#a809fc3cfec3a7ca2bac5c78c41cb6ba6">ViverseWebGLAPI::AvatarHost</a></div><div class="ttdeci">AvatarHost AvatarHost</div><div class="ttdef"><b>Definition</b> ScratchForStateManagement.cs:46</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Packages/UnityViverseWebGLAPI/Runtime/<b>ScratchForStateManagement.cs</b></li>
+<li>Packages/UnityViverseWebGLAPI/Runtime/<a class="el" href="_scratch_for_state_management_8cs.html">ScratchForStateManagement.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>ViverseWebGLAPI</b></li><li class="navelem"><a class="el" href="class_viverse_web_g_l_a_p_i_1_1_host_config_lookup.html">HostConfigLookup</a></li>
+    <li class="navelem"><a class="el" href="namespace_viverse_web_g_l_a_p_i.html">ViverseWebGLAPI</a></li><li class="navelem"><a class="el" href="class_viverse_web_g_l_a_p_i_1_1_host_config_lookup.html">HostConfigLookup</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>

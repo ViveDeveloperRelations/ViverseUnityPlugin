@@ -9,6 +9,5 @@ var searchData=
   ['isinvalid_6',['IsInvalid',['../class_http_listener_safe_handle.html#a55acfbb6d3b7ddef728284c188950232',1,'HttpListenerSafeHandle']]],
   ['islistening_7',['IsListening',['../class_http_listener_safe_handle.html#aaba6a0e5e187165dcd266e99ad20f432',1,'HttpListenerSafeHandle']]],
   ['isprivate_8',['isPrivate',['../class_viverse_web_g_l_a_p_i_1_1_avatar.html#a762ab01a800b3fa21ee8df15c32e73df',1,'ViverseWebGLAPI::Avatar']]],
-  ['isrunning_9',['IsRunning',['../_simple_http_server_8cs.html#af5cb1246be24f89c7a5f720af0c92559',1,'SimpleHttpServer.cs']]],
-  ['issuccess_10',['IsSuccess',['../class_viverse_web_g_l_a_p_i_1_1_viverse_result_3_01_t_01_4.html#a6fd11f848b19a34ef0d38156fef08dd2',1,'ViverseWebGLAPI::ViverseResult&lt; T &gt;']]]
+  ['issuccess_9',['IsSuccess',['../class_viverse_web_g_l_a_p_i_1_1_viverse_result_3_01_t_01_4.html#a6fd11f848b19a34ef0d38156fef08dd2',1,'ViverseWebGLAPI::ViverseResult&lt; T &gt;']]]
 ];

@@ -8,7 +8,7 @@ var searchData=
   ['arounduser_5',['AroundUser',['../namespace_viverse_web_g_l_a_p_i.html#a7bb40435fb207f269dcd606075bba4c7',1,'ViverseWebGLAPI']]],
   ['authkey_6',['AuthKey',['../class_viverse_web_g_l_a_p_i_1_1_user_info.html#ad5b848d089b392a7054d3028b470bd23',1,'ViverseWebGLAPI::UserInfo::AuthKey'],['../namespace_viverse_web_g_l_a_p_i.html#a055bf1f8e61254be4771978b65df989c',1,'ViverseWebGLAPI::AuthKey(string key)']]],
   ['authkeystring_7',['AuthKeyString',['../namespace_viverse_web_g_l_a_p_i.html#a3ac42d31908a494c279dc7b24fd10a64',1,'ViverseWebGLAPI']]],
-  ['avatar_8',['Avatar',['../class_viverse_web_g_l_a_p_i_1_1_avatar.html',1,'ViverseWebGLAPI::Avatar'],['../_hello_world_viverse_8cs.html#ab27c343f44e87ed61f03dc427e7613b9',1,'Avatar:&#160;HelloWorldViverse.cs']]],
+  ['avatar_8',['Avatar',['../class_viverse_web_g_l_a_p_i_1_1_avatar.html',1,'ViverseWebGLAPI']]],
   ['avatar_5furl_9',['avatar_url',['../class_tests_1_1_test_endpoints_1_1_active_avatar.html#acf423e84b44376a22d63bc21d49e3966',1,'Tests::TestEndpoints::ActiveAvatar']]],
   ['avatarhost_10',['AvatarHost',['../class_viverse_web_g_l_a_p_i_1_1_avatar_host.html',1,'ViverseWebGLAPI::AvatarHost'],['../class_viverse_web_g_l_a_p_i_1_1_avatar_host.html#abd561e104b1d0dd59bdc2a909b96983d',1,'ViverseWebGLAPI::AvatarHost::AvatarHost()'],['../namespace_viverse_web_g_l_a_p_i.html#a809fc3cfec3a7ca2bac5c78c41cb6ba6',1,'ViverseWebGLAPI::AvatarHost']]],
   ['avatars_11',['avatars',['../namespace_viverse_web_g_l_a_p_i.html#a360df6be12f5af8b120770a50d79e1c8',1,'ViverseWebGLAPI']]],

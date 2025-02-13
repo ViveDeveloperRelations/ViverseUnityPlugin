@@ -1,7 +1,7 @@
 var searchData=
 [
   ['unmanagedstring_0',['UnmanagedString',['../class_viverse_web_g_l_a_p_i_1_1_unmanaged_string.html#a022d9247583446456f65725311c836ef',1,'ViverseWebGLAPI::UnmanagedString']]],
-  ['uploadscore_1',['UploadScore',['../class_viverse_web_g_l_a_p_i_1_1_viverse_core.html#a25e9d8fe04b88f291de4db8f7cd71316',1,'ViverseWebGLAPI::ViverseCore']]],
+  ['uploadscore_1',['UploadScore',['../class_viverse_web_g_l_a_p_i_1_1_viverse_core_1_1_leaderboard_service_class.html#a825e99922101f623f427d824d0a70bf2',1,'ViverseWebGLAPI::ViverseCore::LeaderboardServiceClass']]],
   ['urlparts_5fcanreconstructurl_5fcomplex_2',['URLParts_CanReconstructURL_Complex',['../class_u_r_l_utils_tests.html#ae03cb524d832eaadf7039e3b5040c1a0',1,'URLUtilsTests']]],
   ['urlparts_5fcanreconstructurl_5fsimple_3',['URLParts_CanReconstructURL_Simple',['../class_u_r_l_utils_tests.html#a27ec0324f1d78178cbc6b5050597b50e',1,'URLUtilsTests']]],
   ['urlparts_5fcanreconstructurl_5fwithspecialcharacters_4',['URLParts_CanReconstructURL_WithSpecialCharacters',['../class_u_r_l_utils_tests.html#a171f2140040fdac2d68a3636469f332a',1,'URLUtilsTests']]],

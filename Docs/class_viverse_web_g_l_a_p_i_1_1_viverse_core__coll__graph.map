@@ -1,7 +1,9 @@
 <map id="ViverseWebGLAPI::ViverseCore" name="ViverseWebGLAPI::ViverseCore">
-<area shape="rect" id="Node000001" title=" " alt="" coords="321,47,531,73"/>
-<area shape="rect" id="Node000002" href="$class_viverse_web_g_l_a_p_i_1_1_viverse_core_1_1_s_s_o_service_class.html" title=" " alt="" coords="5,5,188,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,35,320,47,320,52,203,40"/>
-<area shape="rect" id="Node000003" href="$class_viverse_web_g_l_a_p_i_1_1_viverse_core_1_1_avatar_service_class.html" title=" " alt="" coords="5,72,188,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,80,320,68,320,73,203,85"/>
+<area shape="rect" id="Node000001" title="Core class for handling viverse functions, wrap and manage the sdk functions." alt="" coords="379,80,589,107"/>
+<area shape="rect" id="Node000002" href="$class_viverse_web_g_l_a_p_i_1_1_viverse_core_1_1_s_s_o_service_class.html" title="Main class for handling SSO and SSL (logout) functions." alt="" coords="17,5,200,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,43,405,77,404,82,215,48"/>
+<area shape="rect" id="Node000003" href="$class_viverse_web_g_l_a_p_i_1_1_viverse_core_1_1_leaderboard_service_class.html" title="Service class for handling leaderboard functionality." alt="" coords="5,72,212,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,91,378,91,378,96,227,96"/>
+<area shape="rect" id="Node000004" href="$class_viverse_web_g_l_a_p_i_1_1_viverse_core_1_1_avatar_service_class.html" title="Avatar related viverse functions, wrap and manage the sdk avatar functions." alt="" coords="17,139,200,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="215,139,404,105,405,110,215,144"/>
 </map>

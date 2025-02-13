@@ -31,6 +31,7 @@ var hierarchy =
       [ "Tests::TestEndpoints::UnityWebRequestHandler", "class_tests_1_1_test_endpoints_1_1_unity_web_request_handler.html", null ]
     ] ],
     [ "ViverseWebGLAPI::LeaderboardResult", "class_viverse_web_g_l_a_p_i_1_1_leaderboard_result.html", null ],
+    [ "ViverseWebGLAPI::ViverseCore::LeaderboardServiceClass", "class_viverse_web_g_l_a_p_i_1_1_viverse_core_1_1_leaderboard_service_class.html", null ],
     [ "ViverseWebGLAPI::LoginResult", "class_viverse_web_g_l_a_p_i_1_1_login_result.html", null ],
     [ "MonoBehaviour", null, [
       [ "HelloWorldViverse", "class_hello_world_viverse.html", null ],

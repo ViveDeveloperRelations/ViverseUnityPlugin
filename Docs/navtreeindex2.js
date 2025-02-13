@@ -1,10 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"namespace_tests_1_1_test_endpoints.html#aa331fcbbde36da9dbd3915de760faf05":[0,0,1,0,24],
-"namespace_tests_1_1_test_endpoints.html#aa9ba06b44a38163d32e9c13e530afef6":[0,0,1,0,13],
-"namespace_tests_1_1_test_endpoints.html#aae33ea8629241dccdb4772038539fc7c":[0,0,1,0,16],
-"namespace_tests_1_1_test_endpoints.html#adaf931c902fa31605fa86eb6c965716f":[0,0,1,0,15],
-"namespace_tests_1_1_test_endpoints.html#ae45c8d271331456ae1a8d07ff74c837d":[0,0,1,0,22],
 "namespace_tests_1_1_test_endpoints.html#af4c0693535984a2ae3d274f187f6e764":[0,0,1,0,19],
 "namespace_viverse_web_g_l_a_p_i.html":[0,0,2],
 "namespace_viverse_web_g_l_a_p_i.html#a01b18cf115d0a13376e205f9eaa88516":[0,0,2,41],

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Unity Viverse API: ViverseWebGLAPI.ViverseCore.LeaderboardServiceClass Class Reference</title>
+<title>Unity Viverse API: ViverseWebGLAPI::ViverseCore::LeaderboardServiceClass Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,25 +105,151 @@ $(function(){initNavTree('class_viverse_web_g_l_a_p_i_1_1_viverse_core_1_1_leade
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_viverse_web_g_l_a_p_i_1_1_viverse_core_1_1_leaderboard_service_class-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">ViverseWebGLAPI.ViverseCore.LeaderboardServiceClass Class Reference</div></div>
+  <div class="headertitle"><div class="title">ViverseWebGLAPI::ViverseCore::LeaderboardServiceClass Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Service class for handling leaderboard functionality.  
+ <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaad8234b6523d82b2f6f13df61664466" id="r_aaad8234b6523d82b2f6f13df61664466"><td class="memItemLeft" align="right" valign="top"><a id="aaad8234b6523d82b2f6f13df61664466" name="aaad8234b6523d82b2f6f13df61664466"></a>
-async Task&lt; ViverseResult&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> ()</td></tr>
-<tr class="separator:aaad8234b6523d82b2f6f13df61664466"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af053337a75f04fdf1fc1d929882753b3" id="r_af053337a75f04fdf1fc1d929882753b3"><td class="memItemLeft" align="right" valign="top"><a id="af053337a75f04fdf1fc1d929882753b3" name="af053337a75f04fdf1fc1d929882753b3"></a>
-async Task&lt; ViverseResult&lt; <a class="el" href="class_viverse_web_g_l_a_p_i_1_1_leaderboard_result.html">LeaderboardResult</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>UploadScore</b> (string appId, string leaderboardName, string score)</td></tr>
-<tr class="separator:af053337a75f04fdf1fc1d929882753b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b5cca3597602f86074cf97ee61f7931" id="r_a9b5cca3597602f86074cf97ee61f7931"><td class="memItemLeft" align="right" valign="top"><a id="a9b5cca3597602f86074cf97ee61f7931" name="a9b5cca3597602f86074cf97ee61f7931"></a>
-async Task&lt; ViverseResult&lt; <a class="el" href="class_viverse_web_g_l_a_p_i_1_1_leaderboard_result.html">LeaderboardResult</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetLeaderboardScores</b> (string appId, <a class="el" href="class_viverse_web_g_l_a_p_i_1_1_leaderboard_config.html">LeaderboardConfig</a> leaderboardConfig)</td></tr>
-<tr class="separator:a9b5cca3597602f86074cf97ee61f7931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52ac14cb038fc050758c530259365ea" id="r_aa52ac14cb038fc050758c530259365ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa52ac14cb038fc050758c530259365ea">LeaderboardServiceClass</a> ()</td></tr>
+<tr class="separator:aa52ac14cb038fc050758c530259365ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b583fa50f00d666c89f04c491ce227" id="r_a94b583fa50f00d666c89f04c491ce227"><td class="memItemLeft" align="right" valign="top">async Task&lt; ViverseResult&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94b583fa50f00d666c89f04c491ce227">Initialize</a> ()</td></tr>
+<tr class="separator:a94b583fa50f00d666c89f04c491ce227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825e99922101f623f427d824d0a70bf2" id="r_a825e99922101f623f427d824d0a70bf2"><td class="memItemLeft" align="right" valign="top">async Task&lt; ViverseResult&lt; <a class="el" href="class_viverse_web_g_l_a_p_i_1_1_leaderboard_result.html">LeaderboardResult</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a825e99922101f623f427d824d0a70bf2">UploadScore</a> (string appId, string leaderboardName, string score)</td></tr>
+<tr class="separator:a825e99922101f623f427d824d0a70bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6e0a889e02ef75cc997f517f44617c9" id="r_af6e0a889e02ef75cc997f517f44617c9"><td class="memItemLeft" align="right" valign="top">async Task&lt; ViverseResult&lt; <a class="el" href="class_viverse_web_g_l_a_p_i_1_1_leaderboard_result.html">LeaderboardResult</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6e0a889e02ef75cc997f517f44617c9">GetLeaderboardScores</a> (string appId, LeaderboardConfig leaderboardConfig)</td></tr>
+<tr class="separator:af6e0a889e02ef75cc997f517f44617c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>Packages/UnityViverseWebGLAPI/Runtime/Plugins/WebGL/<b>ViverseCore.cs</b></li>
-</ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Service class for handling leaderboard functionality. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa52ac14cb038fc050758c530259365ea" name="aa52ac14cb038fc050758c530259365ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa52ac14cb038fc050758c530259365ea">&#9670;&#160;</a></span>LeaderboardServiceClass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ViverseWebGLAPI::ViverseCore::LeaderboardServiceClass::LeaderboardServiceClass </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af6e0a889e02ef75cc997f517f44617c9" name="af6e0a889e02ef75cc997f517f44617c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6e0a889e02ef75cc997f517f44617c9">&#9670;&#160;</a></span>GetLeaderboardScores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; ViverseResult&lt; <a class="el" href="class_viverse_web_g_l_a_p_i_1_1_leaderboard_result.html">LeaderboardResult</a> &gt; &gt; ViverseWebGLAPI::ViverseCore::LeaderboardServiceClass::GetLeaderboardScores </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>appId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LeaderboardConfig</td>          <td class="paramname"><span class="paramname"><em>leaderboardConfig</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_viverse_web_g_l_a_p_i_1_1_viverse_core_1_1_leaderboard_service_class_af6e0a889e02ef75cc997f517f44617c9_cgraph.png" border="0" usemap="#aclass_viverse_web_g_l_a_p_i_1_1_viverse_core_1_1_leaderboard_service_class_af6e0a889e02ef75cc997f517f44617c9_cgraph" alt=""/></div>
+<map name="aclass_viverse_web_g_l_a_p_i_1_1_viverse_core_1_1_leaderboard_service_class_af6e0a889e02ef75cc997f517f44617c9_cgraph" id="aclass_viverse_web_g_l_a_p_i_1_1_viverse_core_1_1_leaderboard_service_class_af6e0a889e02ef75cc997f517f44617c9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,212,64"/>
+<area shape="rect" href="class_viverse_web_g_l_a_p_i_1_1_return_code_helper.html#a2c6235acca4c63132bd10672e0666e98" title=" " alt="" coords="260,13,468,56"/>
+<area shape="poly" title=" " alt="" coords="212,32,244,32,244,37,212,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a94b583fa50f00d666c89f04c491ce227" name="a94b583fa50f00d666c89f04c491ce227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94b583fa50f00d666c89f04c491ce227">&#9670;&#160;</a></span>Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; ViverseResult&lt; bool &gt; &gt; ViverseWebGLAPI::ViverseCore::LeaderboardServiceClass::Initialize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a825e99922101f623f427d824d0a70bf2" name="a825e99922101f623f427d824d0a70bf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a825e99922101f623f427d824d0a70bf2">&#9670;&#160;</a></span>UploadScore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; ViverseResult&lt; <a class="el" href="class_viverse_web_g_l_a_p_i_1_1_leaderboard_result.html">LeaderboardResult</a> &gt; &gt; ViverseWebGLAPI::ViverseCore::LeaderboardServiceClass::UploadScore </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>appId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>leaderboardName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>score</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

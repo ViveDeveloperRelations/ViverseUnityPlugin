@@ -1994,10 +1994,10 @@ function dbg(text) {
 // === Body ===
 
 var ASM_CONSTS = {
-  2678832: () => { Module['emscripten_get_now_backup'] = performance.now; },  
- 2678887: ($0) => { performance.now = function() { return $0; }; },  
- 2678935: ($0) => { performance.now = function() { return $0; }; },  
- 2678983: () => { performance.now = Module['emscripten_get_now_backup']; }
+  2678912: () => { Module['emscripten_get_now_backup'] = performance.now; },  
+ 2678967: ($0) => { performance.now = function() { return $0; }; },  
+ 2679015: ($0) => { performance.now = function() { return $0; }; },  
+ 2679063: () => { performance.now = Module['emscripten_get_now_backup']; }
 };
 
 
@@ -2358,15 +2358,15 @@ var ASM_CONSTS = {
   
   
   var ViverseCoreHelpers = {createCallbackWrapper:function(callback) {
-              var dynCallFn = ((a1) => dynCall_vi.apply(null, [callback, a1]));
-              return function(ptr) {
-                  dynCallFn(ptr);
-              };
-          }};
+          var dynCallFn = ((a1) => dynCall_vi.apply(null, [callback, a1]));
+          return function(ptr) {
+            dynCallFn(ptr);
+          };
+        }};
   var deps = ["ViverseReturnCodes","ViverseAsyncHelper","ViverseCore"];
   
   function _Avatar_GetAvatarList(taskId, callback) {
-        var callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
+        const callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
         Module['ViverseAsyncHelper'].wrapAsyncWithPayload(
           taskId,
           Module.ViverseCore.Avatar.GetAvatarList(),
@@ -2376,7 +2376,7 @@ var ASM_CONSTS = {
 
   
   function _Avatar_GetProfile(taskId, callback) {
-        var callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
+        const callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
         Module['ViverseAsyncHelper'].wrapAsyncWithPayload(
           taskId,
           Module.ViverseCore.Avatar.GetProfile(),
@@ -2386,7 +2386,7 @@ var ASM_CONSTS = {
 
   
   function _Avatar_Initialize(taskId, callback) {
-        var callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
+        const callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
         Module['ViverseAsyncHelper'].wrapAsyncWithPayload(
           taskId,
           Module.ViverseCore.Avatar.Initialize(),
@@ -8620,8 +8620,8 @@ var ASM_CONSTS = {
   
   
   function _Leaderboard_GetLeaderboard(appId, configJson, taskId, callback) {
-          var callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
-          Module['ViverseAsyncHelper'].wrapAsyncWithPayload(
+        const callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
+        Module['ViverseAsyncHelper'].wrapAsyncWithPayload(
               taskId,
               Module.ViverseCore.Leaderboard.GetLeaderboard(
                   UTF8ToString(appId),
@@ -8633,8 +8633,8 @@ var ASM_CONSTS = {
 
   
   function _Leaderboard_Initialize(taskId, callback) {
-          var callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
-          Module['ViverseAsyncHelper'].wrapAsyncWithPayload(
+        const callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
+        Module['ViverseAsyncHelper'].wrapAsyncWithPayload(
               taskId,
               Module.ViverseCore.Leaderboard.Initialize(),
               callbackWrapper
@@ -8644,8 +8644,8 @@ var ASM_CONSTS = {
   
   
   function _Leaderboard_UploadScore(appId, leaderboardName, score, taskId, callback) {
-          var callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
-          Module['ViverseAsyncHelper'].wrapAsyncWithPayload(
+        const callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
+        Module['ViverseAsyncHelper'].wrapAsyncWithPayload(
               taskId,
               Module.ViverseCore.Leaderboard.UploadScore(
                   UTF8ToString(appId),
@@ -8658,8 +8658,8 @@ var ASM_CONSTS = {
 
   
   function _SSO_GetAccessToken(taskId, callback) {
-          var callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
-          Module['ViverseAsyncHelper'].wrapAsyncWithPayload(
+        const callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
+        Module['ViverseAsyncHelper'].wrapAsyncWithPayload(
               taskId,
               Module.ViverseCore.SSO.GetAccessToken(),
               callbackWrapper
@@ -8668,8 +8668,8 @@ var ASM_CONSTS = {
 
   
   function _SSO_HandleCallback(taskId, callback) {
-          var callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
-          Module['ViverseAsyncHelper'].wrapAsyncWithPayload(
+        const callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
+        Module['ViverseAsyncHelper'].wrapAsyncWithPayload(
               taskId,
               Module.ViverseCore.SSO.HandleCallback(),
               callbackWrapper
@@ -8680,12 +8680,11 @@ var ASM_CONSTS = {
   
   function _SSO_InitializeClient(clientId, domain, cookieDomain) {
           try {
-              const result = Module.ViverseCore.SSO.InitializeClient(
-                  UTF8ToString(clientId),
-                  UTF8ToString(domain),
-                  cookieDomain ? UTF8ToString(cookieDomain) : undefined
+            return Module.ViverseCore.SSO.InitializeClient(
+                UTF8ToString(clientId),
+                UTF8ToString(domain),
+                cookieDomain ? UTF8ToString(cookieDomain) : undefined
               );
-              return result;
           } catch (e) {
               console.error('SSO_InitializeClient error:', e);
               return Module.ViverseReturnCodes.ERROR_EXCEPTION;
@@ -8695,46 +8694,45 @@ var ASM_CONSTS = {
   
   
   function _SSO_LoginWithRedirect(redirectUrl, taskId, callback) {
-          console.log("SSO_LoginWithRedirect called with redirectUrl:", redirectUrl);
+        const callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
+        //console.log("SSO_LoginWithRedirect called with redirectUrl:", redirectUrl);
   
-          try {
-              var callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
+        try {
+          const protocol = window.location.protocol;
+          const hostname = window.location.hostname;
+          const port = window.location.port ? `:${window.location.port}` : '';
+          const pathname = window.location.pathname;
+          const autoRedirectUrl = `${protocol}//${hostname}${port}${pathname}`;
   
-              const protocol = window.location.protocol;
-              const hostname = window.location.hostname;
-              const port = window.location.port ? `:${window.location.port}` : '';
-              const pathname = window.location.pathname;
-              const autoRedirectUrl = `${protocol}//${hostname}${port}${pathname}`;
-  
-              let redirectUrlToUse = '';
-              if(redirectUrl !== null && redirectUrl !== undefined && redirectUrl !== "") {
-                  redirectUrlToUse = UTF8ToString(redirectUrl);
-                  console.log('Using provided redirectUrl:', redirectUrlToUse);
-              } else {
-                  redirectUrlToUse = autoRedirectUrl;
-                  console.log('Using auto-detected redirectUrl:', redirectUrlToUse);
-              }
-  
-              Module['ViverseAsyncHelper'].wrapAsyncWithPayload(
-                  taskId,
-                  Module.ViverseCore.SSO.LoginWithRedirect(redirectUrlToUse),
-                  callbackWrapper
-              );
-          } catch (e) {
-              console.error('SSO_LoginWithRedirect error:', e);
-              // The enhanced wrapper will handle this error case
-              Module['ViverseAsyncHelper'].wrapAsyncWithPayload(
-                  taskId,
-                  Promise.reject(e),
-                  callbackWrapper
-              );
+          let redirectUrlToUse = '';
+          if(redirectUrl !== null && redirectUrl !== undefined && redirectUrl !== "") {
+              redirectUrlToUse = UTF8ToString(redirectUrl);
+              //console.log('Using provided redirectUrl:', redirectUrlToUse);
+          } else {
+              redirectUrlToUse = autoRedirectUrl;
+              //console.log('Using auto-detected redirectUrl:', redirectUrlToUse);
           }
+  
+          Module['ViverseAsyncHelper'].wrapAsyncWithPayload(
+              taskId,
+              Module.ViverseCore.SSO.LoginWithRedirect(redirectUrlToUse),
+              callbackWrapper
+          );
+        } catch (e) {
+            console.error('SSO_LoginWithRedirect error:', e);
+            // The enhanced wrapper will handle this error case
+            Module['ViverseAsyncHelper'].wrapAsyncWithPayload(
+                taskId,
+                Promise.reject(e),
+                callbackWrapper
+            );
+        }
       }
 
   
   
   function _SSO_Logout(redirectUrl, taskId, callback) {
-        var callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
+        const callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
         Module['ViverseAsyncHelper'].wrapAsyncWithPayload(
           taskId,
           Module.ViverseCore.SSO.Logout(UTF8ToString(redirectUrl)),
@@ -8789,9 +8787,9 @@ var ASM_CONSTS = {
 
   
   function _ViverseSDK_Initialize(taskId, callback) {
-          console.log("ViverseSDK_Initialize called with taskId:", taskId);
-          var callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
-          Module['ViverseAsyncHelper'].wrapAsyncWithPayload(taskId, Module.ViverseCore.Initialize(), callbackWrapper);
+        console.log("ViverseSDK_Initialize called with taskId:", taskId);
+        const callbackWrapper = ViverseCoreHelpers.createCallbackWrapper(callback);
+        Module['ViverseAsyncHelper'].wrapAsyncWithPayload(taskId, Module.ViverseCore.Initialize(), callbackWrapper);
       }
 
   
